@@ -9,31 +9,40 @@ import FooterLogo from '@/components/footer/FooterLogo';
 
 export default function Home() {
   return (
-    <SiteThemeProvider theme={{ styleVariant: 'futuristicAndOutOfBox', colorTemplate: 1, textAnimation: 'none' }}>
+    <SiteThemeProvider theme={{
+      styleVariant: "futuristicAndOutOfBox",
+      colorTemplate: 1,
+      textAnimation: "none",
+    }}>
       <div id="nav" data-section="nav">
         <NavbarBase
           logoSrc="/images/logo.svg"
-          logoAlt="Barney Coin Logo"
-          leftButtonText="Menu"
-          rightButtonText="Join Barney"
-          className="sticky"
+          logoAlt="Barnie Logo"
+          logoWidth={40}
+          logoHeight={40}
+          buttonText="Join Barney"
+          onButtonClick={() => {}}
+          className="bg-white"
         />
       </div>
 
       <div id="hero" data-section="hero" className="scroll-mt-24">
         <TokenBillboardHero
           title="Welcome to Barnie Coin"
-          subtitle="The future of meme currencies"
-          contractAddress="0x..."
+          subtitle="Your gateway to the meme-coin revolution."
+          contractAddress="0x123456789abcdef"
           copyButtonText="Copy Address"
-          copiedText="Address Copied!"
+          copiedText="Copied!"
         />
       </div>
 
       <div id="about" data-section="about" className="scroll-mt-24">
         <SocialsAbout
           title="About Barnie"
-          descriptions={["Barnie is your friendly cryptocurrency mascot.", "Join us on this fantastic journey!"]}
+          descriptions={[
+            "Barnie Coin is your friendly face in the world of cryptocurrency.",
+            "Join our community and be part of the future.",
+          ]}
         />
       </div>
 
@@ -41,9 +50,9 @@ export default function Home() {
         <HowToBuy3D
           title="How to Buy Barnie"
           steps={[
-            { title: "Step 1", description: "Do your research!", image: "", position: "left", isCenter: false },
-            { title: "Step 2", description: "Join our community!", image: "", position: "center", isCenter: true },
-            { title: "Step 3", description: "Purchase on your favorite exchange!", image: "", position: "right", isCenter: false }
+            { title: "Step 1", description: "Download a wallet", image: "/images/placeholder1.avif", position: "left", isCenter: false },
+            { title: "Step 2", description: "Purchase Barnie tokens", image: "/images/placeholder2.avif", position: "center", isCenter: true },
+            { title: "Step 3", description: "Join the community", image: "/images/placeholder3.avif", position: "right", isCenter: false },
           ]}
         />
       </div>
@@ -51,8 +60,12 @@ export default function Home() {
       <div id="tokenomics" data-section="tokenomics" className="scroll-mt-24">
         <ExpandingGridTokenomics
           title="Tokenomics"
-          description="Here's a quick overview of the Barnie Coin tokenomics."
-          cardItems={[{ id: 1, title: 'Supply', description: 'Amount available.' }, { id: 2, title: 'Liquidity', description: 'Amount set aside for trading.' }]}
+          description="Understand the Barnie Coin economics."
+          cardItems={[
+            { id: 1, title: "Total Supply", description: "1 Billion Barnie Coins" },
+            { id: 2, title: "Circulating Supply", description: "500 Million Barnie Coins" },
+            { id: 3, title: "Market Cap", description: "1 Million Dollar Market Cap" },
+          ]}
         />
       </div>
 
