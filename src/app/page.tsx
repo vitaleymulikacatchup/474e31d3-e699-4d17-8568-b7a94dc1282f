@@ -13,7 +13,6 @@ export default function Home() {
       <div id="nav" data-section="nav">
         <NavbarStyleMinimal
           logoSrc="/images/logo.svg"
-          logoAlt="Barnie Coin Logo"
           buttonText="Join Barney"
           onButtonClick={() => console.log('Join clicked')}
           className="bg-transparent"
@@ -66,7 +65,6 @@ export default function Home() {
       <div id="footer" data-section="footer" className="scroll-mt-24">
         <FooterLogo
           logoSrc="/images/logo.svg"
-          logoAlt="Barnie Coin Logo"
           logoText="Hey, I'm Barney!"
           className="bg-transparent"
           columns={[
