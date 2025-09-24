@@ -1,4 +1,4 @@
-use client
+"use client";
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import NavbarStyleApple from '@/components/navigation/NavbarStyleApple/NavbarStyleApple';
 import FrameHero from '@/components/sections/layouts/hero/FrameHero';
@@ -12,9 +12,10 @@ export default function Home() {
     <SiteThemeProvider theme={{ styleVariant: "funAndTrendy", colorTemplate: 1, textAnimation: "slide" }}>
       <div id="nav" data-section="nav">
         <NavbarStyleApple
-          brand="Barnie Coin"
           navItems={[{ name: "hero", id: "hero" }, { name: "about", id: "about" }, { name: "how-to-buy", id: "how-to-buy" }, { name: "tokenomics", id: "tokenomics" }, { name: "footer", id: "footer" }]}
-          />
+          logoSrc="/images/logo.svg"
+          logoAlt="Barnie Coin Logo"
+        />
       </div>
       <div id="hero" data-section="hero" className="scroll-mt-24">
         <FrameHero title="Welcome to Barnie Coin" description="Join us on this playful journey of making waves in the crypto world!" primaryButtonText="Join Now" secondaryButtonText="Learn More" />
