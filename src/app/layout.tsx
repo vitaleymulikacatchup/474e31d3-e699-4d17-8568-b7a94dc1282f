@@ -15,13 +15,13 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'hey, i'm barney!',
+  title: "hey, I'm barney!",
   description: 'Deliver a minimal, mono-color single-page site for Barnie Coin with hero, about, how-to-buy, tokenomics, and footer; anchored navigation.',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode; }>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body className={`${interTight.variable} ${playfairDisplay.variable} antialiased`}>
