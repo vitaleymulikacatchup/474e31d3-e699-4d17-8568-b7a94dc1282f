@@ -1,4 +1,4 @@
-use client
+"use client";
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import NavbarBase from '@/components/navigation/NavbarBase';
 import TokenBillboardHero from '@/components/sections/layouts/hero/TokenBillboardHero';
@@ -14,7 +14,6 @@ export default function Home() {
         <NavbarBase
           logoSrc="/images/logo.svg"
           logoAlt="Barnie Logo"
-          logoText="hey, I'm barney!"
           leftButtonText="Join Barney"
         />
       </div>
