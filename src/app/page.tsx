@@ -60,9 +60,9 @@ export default function Home() {
           title="Tokenomics"
           description="Discover the value and distribution of Barnie Coin."
           kpiItems={[
-            { value: '10M', description: 'Total Supply', longDescription: 'The total number of tokens created.', icon: 'LucideIcon' },
-            { value: '1M', description: 'Market Cap', longDescription: 'The total market value of Barnie Coin.', icon: 'LucideIcon' },
-            { value: '500K', description: 'Liquidity', longDescription: 'Tokens available for trading.', icon: 'LucideIcon' }
+            { value: '10M', description: 'Total Supply', longDescription: 'The total number of tokens created.', icon: 'Shield' },
+            { value: '1M', description: 'Market Cap', longDescription: 'The total market value of Barnie Coin.', icon: 'Shield' },
+            { value: '500K', description: 'Liquidity', longDescription: 'Tokens available for trading.', icon: 'Shield' }
           ]}
         />
       </div>
