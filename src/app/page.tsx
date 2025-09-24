@@ -19,7 +19,6 @@ export default function Home() {
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline 
           logoSrc="/images/logo.svg"
-          logoAlt="Barney Logo"
           navItems={[
             { name: 'Hero', id: 'hero' },
             { name: 'About', id: 'about' },
