@@ -6,6 +6,7 @@ import SocialsAbout from '@/components/sections/layouts/about/SocialsAbout';
 import HowToBuy2D from '@/components/sections/layouts/howtobuy/2DHTB';
 import BigNumberTokenomics from '@/components/sections/layouts/tokenomics/BigNumberTokenomics';
 import FooterBase from '@/components/footer/FooterBase';
+import { Shield } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -60,9 +61,9 @@ export default function Home() {
           title="Tokenomics"
           description="Discover the value and distribution of Barnie Coin."
           kpiItems={[
-            { value: '10M', description: 'Total Supply', longDescription: 'The total number of tokens created.', icon: 'Shield' },
-            { value: '1M', description: 'Market Cap', longDescription: 'The total market value of Barnie Coin.', icon: 'Shield' },
-            { value: '500K', description: 'Liquidity', longDescription: 'Tokens available for trading.', icon: 'Shield' }
+            { value: '10M', description: 'Total Supply', longDescription: 'The total number of tokens created.', icon: Shield },
+            { value: '1M', description: 'Market Cap', longDescription: 'The total market value of Barnie Coin.', icon: Shield },
+            { value: '500K', description: 'Liquidity', longDescription: 'Tokens available for trading.', icon: Shield }
           ]}
         />
       </div>
