@@ -1,4 +1,4 @@
-use client
+"use client";
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import NavbarBase from '@/components/navigation/NavbarBase';
 import TokenBillboardHero from '@/components/sections/layouts/hero/TokenBillboardHero';
@@ -13,7 +13,7 @@ export default function Home() {
       <div id="nav" data-section="nav">
         <NavbarBase
           logoSrc="/images/logo.svg"
-          logoAlt="hey, i'm barney!"
+          logoAlt="hey, I'm barney!"
           leftButtonText=""
           rightButtonText="Join Barney"
         />
@@ -61,7 +61,7 @@ export default function Home() {
         <FooterLogo
           logoSrc="/images/logo.svg"
           logoAlt="Barnie Coin Logo"
-          logoText="hey, i'm barney!"
+          logoText="hey, I'm barney!"
           className="footer"
           svgClassName="svg-footer"
         />
