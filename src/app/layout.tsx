@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter_Tight, Playfair_Display } from "next/font/google";
+import { Inter_Tight, Poppins } from "next/font/google";
 import "./globals.css";
 
 const interTight = Inter_Tight({
@@ -8,27 +8,23 @@ const interTight = Inter_Tight({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-const playfairDisplay = Playfair_Display({
-  variable: "--font-playfair",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
   title: "hey, i'm barney!",
-  description: "Deliver a minimal, mono-color single-page site for Barnie Coin with anchored navigation and five content sections: Hero, About, How to Buy, Tokenomics, Footer.",
+  description: "Deliver a minimal, mono-color single-page site for Barnie Coin with anchored navigation.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
-      <body
-        className={`${interTight.variable} ${playfairDisplay.variable} antialiased`}
-      >
+      <body className={`${interTight.variable} ${poppins.variable} antialiased`}>
         {children}
       </body>
     </html>
