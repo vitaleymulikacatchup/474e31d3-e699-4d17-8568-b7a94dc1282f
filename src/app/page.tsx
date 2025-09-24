@@ -6,7 +6,7 @@ import SocialsAbout from '@/components/sections/layouts/about/SocialsAbout';
 import HowToBuy2D from '@/components/sections/layouts/howtobuy/2DHTB';
 import BigNumberTokenomics from '@/components/sections/layouts/tokenomics/BigNumberTokenomics';
 import FooterBase from '@/components/footer/FooterBase';
-import { LucideIcon } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const navItems = [
   { name: 'Hero', id: 'hero' },
@@ -53,7 +53,7 @@ export default function Home() {
           title="Tokenomics" 
           description="Understand the value of Barnie Coin" 
           kpiItems={[
-            { value: "10M", description: "Total Supply", longDescription: "Total Barnie Coins available.", icon: LucideIcon }
+            { value: "10M", description: "Total Supply", longDescription: "Total Barnie Coins available.", icon: ArrowRight }
           ]}
         />
       </div>
