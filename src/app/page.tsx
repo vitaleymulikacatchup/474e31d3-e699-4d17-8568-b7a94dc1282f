@@ -18,10 +18,8 @@ export default function Home() {
         <NavbarBase
           logoSrc="/images/logo.svg"
           logoAlt="Barnie Logo"
-          logoWidth={40}
-          logoHeight={40}
-          buttonText="Join Barney"
-          onButtonClick={() => {}}
+          leftButtonText="Join Barney"
+          onLeftButtonClick={() => {}}
           className="bg-white"
         />
       </div>
